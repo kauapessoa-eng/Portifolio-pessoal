@@ -8,8 +8,8 @@ Olá! Meu nome é Kauã Dórea e sou estudante de Engenharia de Software. Este p
 
 As principais tecnologias utilizadas neste portfólio são:
 
-- **HTML5:** estrutura e organização das páginas.
-- **CSS3:** estilização, cores, layout e responsividade.
+- **HTML:** estrutura e organização das páginas.
+- **CSS:** estilização, cores, layout e responsividade.
 - **JavaScript:** interatividade, filtros de projetos e validação do formulário.
 
 ## O que você encontra aqui?
