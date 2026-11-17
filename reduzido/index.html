@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Portfólio - Kauã</title>
+</head>
+<body>
+<header>
+    <h1>Kauã Dórea da Cunha Pessoa</h1>
+    <p>Estudante de engenharia de software.</p>
+    <nav aria-label="Menu principal">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#conhecimentos">Conhecimentos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é Kauã, sou estudante de engenharia de software e estou aprendendo programação e desenvolvimento web. Tenho interesse em tecnologia e criação de sites.</p>
+        <p>Atualmente estou estudando HTML, CSS, JavaScript e Java, buscando desenvolver meus conhecimentos e criar meus primeiros projetos.</p>
+    </section>
+
+    <section id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <ul>
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Git e GitHub</li>
+        </ul>
+        <h3>Minhas habilidades</h3>
+        <table>
+            <thead><tr><th>Tecnologia</th><th>Nível</th><th>Onde aplico</th></tr></thead>
+            <tbody>
+                <tr><td>HTML</td><td>Iniciante</td><td>Estrutura de páginas</td></tr>
+                <tr><td>CSS</td><td>Iniciante</td><td>Estilização</td></tr>
+                <tr><td>Java</td><td>Iniciante</td><td>Programação orientada a objetos</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <div class="filtros" aria-label="Filtrar projetos">
+            <button type="button" class="filtro ativo" data-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filtro" data-filtro="html" aria-pressed="false">HTML</button>
+            <button type="button" class="filtro" data-filtro="java" aria-pressed="false">Java</button>
+        </div>
+        <p id="quantidade-projetos" class="resultado-filtro" aria-live="polite">2 projetos encontrados.</p>
+        <p id="sem-projetos" class="mensagem-vazia" hidden>Nenhum projeto encontrado. Escolha outra categoria.</p>
+
+        <article class="card-projeto" data-tecnologia="html">
+            <img src="projeto-site.svg" alt="Ilustração de uma página de site em um computador">
+            <h3>Meu primeiro site</h3>
+            <p><strong>Problema:</strong> praticar a criação e a organização de uma página web.</p>
+            <p><strong>Público:</strong> visitantes que desejam conhecer meu trabalho.</p>
+            <p><strong>Minha contribuição:</strong> desenvolvi a estrutura da página e sua apresentação visual.</p>
+            <p>Tecnologias: HTML e CSS.</p>
+            <a href="mailto:kaua.pessoa@ucsal.edu.br?subject=Sobre%20o%20projeto%20Meu%20primeiro%20site">Conversar sobre este projeto</a>
+        </article>
+
+        <article class="card-projeto" data-tecnologia="java">
+            <img src="projeto-java.svg" alt="Ilustração de código Java em uma tela">
+            <h3>Projeto em Java</h3>
+            <p><strong>Problema:</strong> praticar a organização de um programa com orientação a objetos.</p>
+            <p><strong>Público:</strong> atividade acadêmica e pessoas interessadas em programação.</p>
+            <p><strong>Minha contribuição:</strong> desenvolvi classes e pratiquei conceitos de programação orientada a objetos.</p>
+            <p>Tecnologias: Java.</p>
+            <a href="mailto:kaua.pessoa@ucsal.edu.br?subject=Sobre%20o%20projeto%20em%20Java">Conversar sobre este projeto</a>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Informações extras</h2>
+        <p>Meu objetivo é continuar estudando programação e desenvolver projetos cada vez mais completos.</p>
+        <ul>
+            <li>Interesses: Desenvolvimento Web</li>
+            <li>Desenvolvimento de Software</li>
+            <li>Manutenção de Sistemas</li>
+        </ul>
+    </aside>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Também é possível entrar em contato pelo e-mail <a href="mailto:kaua.pessoa@ucsal.edu.br">kaua.pessoa@ucsal.edu.br</a>.</p>
+
+        <form id="form-contato" action="https://formsubmit.co/ajax/kaua.pessoa@ucsal.edu.br" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nova mensagem pelo portfólio">
+            <div id="resumo-erros" class="resumo-erros" role="alert" tabindex="-1" hidden></div>
+
+            <label for="nome">Nome (3 a 80 caracteres)</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required minlength="1" maxlength="82" aria-describedby="ajuda-nome erro-nome">
+            <small id="ajuda-nome">A contagem considera o texto sem espaços no início e no fim.</small>
+            <span class="erro" id="erro-nome"></span>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="ajuda-email erro-email">
+            <small id="ajuda-email">Informe um endereço de e-mail em formato válido.</small>
+            <span class="erro" id="erro-email"></span>
+
+            <label for="motivo">Motivo do contato</label>
+            <select id="motivo" name="motivo" required aria-describedby="erro-motivo">
+                <option value="">Selecione uma opção</option>
+                <option value="Oportunidade profissional">Oportunidade profissional</option>
+                <option value="Projeto freelance">Projeto freelance</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <span class="erro" id="erro-motivo"></span>
+
+            <div id="grupo-assunto" hidden>
+                <label for="assunto">Assunto adicional (5 a 100 caracteres)</label>
+                <input type="text" id="assunto" name="assunto" minlength="1" maxlength="102" aria-describedby="ajuda-assunto erro-assunto" disabled>
+                <small id="ajuda-assunto">Preencha este campo somente quando escolher “Outro”.</small>
+                <span class="erro" id="erro-assunto"></span>
+            </div>
+
+            <label for="mensagem">Mensagem (30 a 1000 caracteres)</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required minlength="1" maxlength="1002" aria-describedby="ajuda-mensagem contador-mensagem erro-mensagem"></textarea>
+            <small id="ajuda-mensagem">A contagem considera o texto sem espaços no início e no fim.</small>
+            <small id="contador-mensagem" aria-live="polite">0 / 1000 caracteres</small>
+            <span class="erro" id="erro-mensagem"></span>
+
+            <button id="botao-enviar" type="submit">Enviar mensagem</button>
+            <p id="status-formulario" class="status-formulario" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Kauã Dórea da Cunha Pessoa</p>
+    <p>Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
