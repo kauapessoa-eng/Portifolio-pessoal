@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+header, footer {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 { margin-top: 0; overflow-wrap: anywhere; }
+
+nav, .filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 4px;
+}
+
+nav a:hover, nav a:focus {
+    color: gold;
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1px 12px;
+}
+
+section, aside {
+    margin: 20px 8px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section {
+    background: white;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 6px lightgray;
+    min-width: 0;
+}
+
+article {
+    margin: 15px 0;
+    padding: 15px;
+    background: aliceblue;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+article:hover { transform: translateY(-3px); }
+
+article a, button {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background: royalblue;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+article a:hover, article a:focus,
+button:hover, button:focus { background: navy; }
+
+aside {
+    background: lightyellow;
+    border: 1px solid gold;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th { background: navy; color: white; }
+
+th, td {
+    padding: 10px;
+    border: 1px solid lightgray;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+form { display: flex; flex-direction: column; gap: 8px; }
+
+input, textarea, select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid royalblue;
+    border-color: royalblue;
+}
+
+textarea { resize: vertical; }
+
+button {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 10px 16px;
+    background: navy;
+}
+
+button:disabled { opacity: 0.65; cursor: wait; }
+
+.filtros { justify-content: flex-start; gap: 8px; margin: 12px 0; }
+.filtros button { margin-top: 0; }
+.filtros button.ativo { background: royalblue; outline: 2px solid navy; }
+
+.resultado-filtro, .mensagem-vazia { margin: 8px 0; }
+.card-projeto img { display: block; width: 100%; max-width: 220px; height: auto; margin-bottom: 12px; }
+
+form small { color: #444; }
+.erro { color: #a00000; font-weight: bold; }
+.resumo-erros {
+    padding: 10px;
+    color: #700000;
+    background: #fff0f0;
+    border: 1px solid #a00000;
+    border-radius: 5px;
+}
+input[aria-invalid="true"], textarea[aria-invalid="true"], select[aria-invalid="true"] {
+    border: 2px solid #a00000;
+}
+.status-formulario { overflow-wrap: anywhere; }
+[hidden] { display: none !important; }
+
+@media (max-width: 768px) {
+    header { padding: 22px 16px; }
+    nav { flex-direction: column; gap: 4px; }
+    nav a { width: 100%; padding: 8px; }
+    section, aside { margin: 12px 4px; padding: 16px; }
+    .container { padding: 1px 8px; }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 1.6rem; }
+    header p { font-size: 0.95rem; }
+    section, aside, article { padding: 12px; }
+    th, td { padding: 6px; font-size: 0.85rem; }
+    button { width: 100%; align-self: stretch; }
+    .filtros button { width: auto; align-self: auto; }
+    .card-projeto img { max-width: 100%; }
+    footer { padding: 12px; font-size: 0.9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
