@@ -1,35 +1,69 @@
 # Portfólio — Kauã Dórea
 
-## Sobre mim
-
 Olá! Meu nome é Kauã Dórea e sou estudante de Engenharia de Software. Este portfólio foi criado para apresentar um pouco sobre mim, meus conhecimentos, projetos e minha evolução na área de tecnologia.
 
-## Tecnologias
+## Tecnologias utilizadas
 
-As principais tecnologias utilizadas neste portfólio são:
+- HTML
+- CSS
+- JavaScript
 
-- **HTML:** estrutura e organização das páginas.
-- **CSS:** estilização, cores, layout e responsividade.
-- **JavaScript:** interatividade, filtros de projetos e validação do formulário.
+## Como executar o projeto
 
-## O que você encontra aqui?
+Para visualizar o portfólio, basta acessar o link publicado ou baixar os arquivos do repositório.
 
-- **Sobre mim:** uma breve apresentação pessoal.
-- **Conhecimentos:** tecnologias e habilidades que venho desenvolvendo.
-- **Projetos:** alguns dos meus trabalhos e experiências com programação.
-- **Contato:** um espaço para enviar mensagens e entrar em contato comigo.
+Para executar localmente:
+1. Baixe ou clone este repositório.
+2. Abra a pasta do projeto.
+3. Execute o arquivo `index.html` no navegador.
 
-## Como visualizar
+**Portfólio publicado:**  
+https://kauapessoa-eng.github.io/Portfolio-pessoal/
 
-Para visualizar o portfólio, basta acessar o arquivo `index.html` em um navegador ou acessar a versão publicada do site, quando disponível.
+## Problemas identificados e melhorias
 
-## Contato
+Durante a revisão do projeto, foram observados alguns pontos que precisavam de ajustes:
 
-Você pode entrar em contato comigo pelo formulário disponível no próprio portfólio.
+1. **Organização do código:** separação do HTML, CSS e JavaScript em arquivos diferentes.
+2. **Responsividade:** ajustes para melhorar a visualização em telas menores.
+3. **Botões de filtro:** organização dos botões para evitar que fiquem apertados em telas pequenas.
+4. **Validação do formulário:** verificação dos campos obrigatórios antes do envio.
+5. **Envio do formulário:** prevenção de envios repetidos e apresentação de mensagens de retorno ao usuário.
 
----
+## Matriz de testes
 
-**Kauã Dórea da Cunha Pessoa**
+| Teste | Comportamento esperado |
+|---|---|
+| Abrir o portfólio | A página deve carregar corretamente. |
+| Navegar pelo menu | Os links devem levar às seções correspondentes. |
+| Filtrar projetos | Devem aparecer apenas os projetos da categoria escolhida. |
+| Acessar pelo celular | O conteúdo deve se adaptar à tela. |
+| Enviar formulário vazio | O sistema deve indicar os campos que precisam ser preenchidos. |
+| Selecionar a opção "Outro" | Deve aparecer o campo adicional de assunto. |
+| Enviar formulário preenchido | A mensagem deve ser encaminhada e o usuário deve receber um retorno. |
 
-Estudante de Engenharia de Software
+## Revisão do colega
 
+O projeto foi revisado pelo meu amigo **Eduardo Aldrim**, que analisou o portfólio e ajudou a identificar pontos que poderiam ser melhorados.
+
+## Organização e refatoração
+
+Uma das melhorias foi separar o projeto em três arquivos: `index.html`, `style.css` e `script.js`.
+
+Essa organização facilita encontrar cada parte do código, fazer alterações e manter o projeto.
+
+## Como funciona o contato
+
+O formulário utiliza o serviço FormSubmit para encaminhar as mensagens para meu e-mail.
+
+O JavaScript verifica se os campos foram preenchidos corretamente e utiliza o `fetch` para enviar os dados sem precisar recarregar a página.
+
+Também existe um campo oculto que define automaticamente o assunto do e-mail que recebo, sem que o visitante precise preenchê-lo.
+
+## Sobre o projeto
+
+Este portfólio representa meu aprendizado em desenvolvimento Front-End e reúne conhecimentos que venho adquirindo durante o curso de Engenharia de Software.
+
+**Autor:** Kauã Dórea da Cunha Pessoa  
+**Curso:** Engenharia de Software  
+**Instituição:** Universidade Católica do Salvador (UCSal)
