@@ -18,7 +18,7 @@ Para executar localmente:
 3. Execute o arquivo `index.html` no navegador.
 
 **Portfólio publicado:**  
-https://kauapessoa-eng.github.io/Portfolio-pessoal/
+[https://kauapessoa-eng.github.io/Portfolio-pessoal/](https://kauapessoa-eng.github.io/Portifolio-pessoal/)
 
 ## Problemas identificados e melhorias
 
