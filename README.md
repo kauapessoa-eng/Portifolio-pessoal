@@ -19,7 +19,7 @@ Olá! Meu nome é Kauã Dórea e sou estudante de Engenharia de Software. Criei 
 
 Para acessar o portfólio, basta abrir o link publicado:
 
-[Visualizar meu portfólio](https://kauapessoa-eng.github.io/Portifolio-pessoal/))
+[Visualizar meu portfólio](https://kauapessoa-eng.github.io/Portifolio-pessoal/)
 
 Para executar no computador:
 1. Baixe ou clone este repositório.
